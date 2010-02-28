@@ -25,6 +25,7 @@
 @synthesize savedOutlineView;
 @synthesize saveRequestSheet;
 @synthesize saveRequestTextField;
+@synthesize savedRequestsDrawer;
 
 - (id) init {
 	self = [super init];
@@ -35,13 +36,16 @@
 	[row setObject:@"Content-Type" forKey:@"header-name"];
 	[headersTable addObject:row];
 	
+	/*
 	savedRequestsArray = [[NSMutableArray alloc] init];
 	NSMutableDictionary *req1 = [[NSMutableDictionary alloc] init];
 	[req1 setObject:@"github feed" forKey:@"name"];
 	[req1 setObject:@"http://github.com/mmattozzi.atom" forKey:@"url"];
 	[req1 setObject:@"GET" forKey:@"method"];
 	[savedRequestsArray addObject:req1];
-	
+	*/
+	[self loadDataFromDisk];
+	 
 	return self;
 }
 
@@ -58,6 +62,7 @@
 	[responseTextHeaders setFont:[NSFont fontWithName:@"Courier New" size:12]];
 	[requestText setFont:[NSFont fontWithName:@"Courier New" size:12]];
 	[urlBox setNumberOfVisibleItems:10];
+	[savedRequestsDrawer open];
 }
 
 - (IBAction) runSubmit:(id)sender {
@@ -67,7 +72,7 @@
 	// [alert setInformativeText: [urlBox stringValue]];
 	// [alert runModal];
 	
-	[responseText setString: [urlBox stringValue]];
+	[responseText setString:[NSString stringWithFormat:@"Loading %@", [urlBox stringValue]]];
 	[urlBox insertItemWithObjectValue: [urlBox stringValue] atIndex:0];
 	
 	if (! receivedData) {
@@ -218,6 +223,11 @@
 	[headersTableView editColumn:0 row:([headersTable count] - 1) withEvent:nil select:YES];
 }
 
+- (IBAction) minusHeaderRow:(id)sender {
+	[headersTable removeObjectAtIndex:[headersTableView selectedRow]];
+	[headersTableView reloadData];
+}
+
 - (IBAction) clearAuth:(id)sender {
 	[username setStringValue:@""];
 	[password setStringValue:@""];
@@ -263,9 +273,11 @@
 
 // Respond to click on a row of the saved requests outline view
 - (IBAction) outlineClick:(id)sender {
+	/*
 	NSAlert *alert = [NSAlert new];
 	[alert setMessageText:[NSString stringWithFormat:@"Selected %@", [savedOutlineView itemAtRow:[savedOutlineView selectedRow]]]];
 	[alert runModal];
+	 */
 	
 	[self loadSavedRequest:[savedOutlineView itemAtRow:[savedOutlineView selectedRow]]];
 }
@@ -301,6 +313,9 @@
 	[savedReq setObject:[[NSString alloc] initWithString:[requestText string]] forKey:@"body"];
 	[savedReq setObject:[username stringValue] forKey:@"username"];
 	[savedReq setObject:[password stringValue] forKey:@"password"];
+	
+	[savedReq setObject:[[NSArray alloc] initWithArray:headersTable] forKey:@"headers"];
+	
 	return savedReq;
 }
 
@@ -313,7 +328,42 @@
 		[requestText setString:@""];
 	}
 	[username setStringValue:[request objectForKey:@"username"]];
-	[password setStringValue:[request objectForKey:@"password"]]; 
+	[password setStringValue:[request objectForKey:@"password"]];
+	
+	NSArray *headers = [request objectForKey:@"headers"];
+	[headersTable removeAllObjects];
+	if (headers) {
+		[headersTable addObjectsFromArray:headers];
+	}
+	[headersTableView reloadData];
+}
+
+- (NSString *) pathForDataFile {
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+	NSString *folder = @"~/Library/Application Support/CocoaRestClient/";
+	folder = [folder stringByExpandingTildeInPath];
+	
+	if ([fileManager fileExistsAtPath: folder] == NO) {
+		[fileManager createDirectoryAtPath:folder attributes:nil];
+	}
+    
+	NSString *fileName = @"CocoaRestClient.savedRequests";
+	return [folder stringByAppendingPathComponent:fileName];    
+}
+
+- (void) saveDataToDisk {
+	NSString *path = [self pathForDataFile];
+	[NSKeyedArchiver archiveRootObject:savedRequestsArray toFile:path];
+}
+
+- (void) loadDataFromDisk {
+	NSString *path = [self pathForDataFile];
+	savedRequestsArray = [[NSMutableArray alloc] initWithArray:[NSKeyedUnarchiver unarchiveObjectWithFile:path]];
+}
+
+- (void) applicationWillTerminate: (NSNotification *)note {
+	[self saveDataToDisk];
 }
 
 @end

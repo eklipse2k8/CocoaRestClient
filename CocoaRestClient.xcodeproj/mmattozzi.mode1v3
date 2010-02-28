@@ -274,7 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>16</integer>
+									<integer>15</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -299,7 +299,7 @@
 							<real>267</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>77 128 1221 747 0 0 1440 878 </string>
+						<string>96 119 1221 747 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AF7A1448113A3CEA00F0D6F5</string>
+										<string>AF7A1490113AF61500F0D6F5</string>
 										<key>history</key>
 										<array>
 											<string>AF1FC48710F435C300ED5A57</string>
@@ -342,8 +342,8 @@
 											<string>AF7A132C1139754A00F0D6F5</string>
 											<string>AF7A13B3113A2A4100F0D6F5</string>
 											<string>AF7A13B4113A2A4100F0D6F5</string>
-											<string>AF7A1446113A3CEA00F0D6F5</string>
-											<string>AF7A1447113A3CEA00F0D6F5</string>
+											<string>AF7A148E113AF61500F0D6F5</string>
+											<string>AF7A148F113AF61500F0D6F5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -357,7 +357,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {932, 555}}</string>
 								<key>RubberWindowFrame</key>
-								<string>77 128 1221 747 0 0 1440 878 </string>
+								<string>96 119 1221 747 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -377,7 +377,7 @@
 								<key>Frame</key>
 								<string>{{0, 560}, {932, 146}}</string>
 								<key>RubberWindowFrame</key>
-								<string>77 128 1221 747 0 0 1440 878 </string>
+								<string>96 119 1221 747 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -541,7 +541,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>AF7A1449113A3CEA00F0D6F5</string>
 		<string>AF7A13DA113A300A00F0D6F5</string>
 		<string>AF7A12F51138D73900F0D6F5</string>
 		<string>AF7A12F61138D73900F0D6F5</string>
@@ -551,7 +550,7 @@
 		<string>/Users/mmattozzi/xcode/CocoaRestClient/CocoaRestClient.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>77 128 1221 747 0 0 1440 878 </string>
+	<string>96 119 1221 747 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

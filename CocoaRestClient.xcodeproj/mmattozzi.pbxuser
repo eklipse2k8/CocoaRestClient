@@ -9,16 +9,16 @@
 	};
 	256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {871, 819}}";
-			sepNavSelRange = "{1718, 0}";
-			sepNavVisRange = "{455, 1380}";
+			sepNavIntBoundsRect = "{{0, 0}, {871, 897}}";
+			sepNavSelRange = "{965, 0}";
+			sepNavVisRange = "{505, 1486}";
 		};
 	};
 	256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {929, 4264}}";
-			sepNavSelRange = "{9765, 0}";
-			sepNavVisRange = "{9366, 1701}";
+			sepNavIntBoundsRect = "{{0, 0}, {871, 4979}}";
+			sepNavSelRange = "{962, 0}";
+			sepNavVisRange = "{762, 1394}";
 		};
 	};
 	256AC3F00F4B6AF500CF3369 /* CocoaRestClient_Prefix.pch */ = {
@@ -36,10 +36,10 @@
 			8D1107260486CEB800E47090 /* CocoaRestClient */,
 		);
 		breakpoints = (
-			AF7A13E4113A31CD00F0D6F5 /* CocoaRestClientAppDelegate.m:290 */,
-			AF7A1417113A370700F0D6F5 /* CocoaRestClientAppDelegate.m:303 */,
-			AF7A1429113A38FB00F0D6F5 /* CocoaRestClientAppDelegate.m:292 */,
-			AF7A142E113A395800F0D6F5 /* CocoaRestClientAppDelegate.m:270 */,
+			AF7A13E4113A31CD00F0D6F5 /* CocoaRestClientAppDelegate.m:302 */,
+			AF7A1417113A370700F0D6F5 /* CocoaRestClientAppDelegate.m:319 */,
+			AF7A1429113A38FB00F0D6F5 /* CocoaRestClientAppDelegate.m:304 */,
+			AF7A142E113A395800F0D6F5 /* CocoaRestClientAppDelegate.m:282 */,
 		);
 		codeSenseManager = AF1FC43310F4297A00ED5A57 /* Code sense */;
 		executables = (
@@ -245,6 +245,34 @@
 			AF7A1446113A3CEA00F0D6F5 /* PBXTextBookmark */ = AF7A1446113A3CEA00F0D6F5 /* PBXTextBookmark */;
 			AF7A1447113A3CEA00F0D6F5 /* PBXTextBookmark */ = AF7A1447113A3CEA00F0D6F5 /* PBXTextBookmark */;
 			AF7A1448113A3CEA00F0D6F5 /* PBXTextBookmark */ = AF7A1448113A3CEA00F0D6F5 /* PBXTextBookmark */;
+			AF7A1450113ABF9300F0D6F5 /* PBXTextBookmark */ = AF7A1450113ABF9300F0D6F5 /* PBXTextBookmark */;
+			AF7A1451113ABF9300F0D6F5 /* PBXTextBookmark */ = AF7A1451113ABF9300F0D6F5 /* PBXTextBookmark */;
+			AF7A1452113ABF9300F0D6F5 /* PBXTextBookmark */ = AF7A1452113ABF9300F0D6F5 /* PBXTextBookmark */;
+			AF7A1455113AC00100F0D6F5 /* PBXTextBookmark */ = AF7A1455113AC00100F0D6F5 /* PBXTextBookmark */;
+			AF7A1456113AC0FF00F0D6F5 /* PBXTextBookmark */ = AF7A1456113AC0FF00F0D6F5 /* PBXTextBookmark */;
+			AF7A1457113AC0FF00F0D6F5 /* PBXTextBookmark */ = AF7A1457113AC0FF00F0D6F5 /* PBXTextBookmark */;
+			AF7A1458113AC0FF00F0D6F5 /* PBXTextBookmark */ = AF7A1458113AC0FF00F0D6F5 /* PBXTextBookmark */;
+			AF7A145D113AC13E00F0D6F5 /* PBXTextBookmark */ = AF7A145D113AC13E00F0D6F5 /* PBXTextBookmark */;
+			AF7A145E113AC13E00F0D6F5 /* PBXTextBookmark */ = AF7A145E113AC13E00F0D6F5 /* PBXTextBookmark */;
+			AF7A145F113AC13E00F0D6F5 /* PBXTextBookmark */ = AF7A145F113AC13E00F0D6F5 /* PBXTextBookmark */;
+			AF7A1463113AD87800F0D6F5 /* PBXTextBookmark */ = AF7A1463113AD87800F0D6F5 /* PBXTextBookmark */;
+			AF7A1468113AEAD300F0D6F5 /* PBXTextBookmark */ = AF7A1468113AEAD300F0D6F5 /* PBXTextBookmark */;
+			AF7A1469113AEAD300F0D6F5 /* PBXTextBookmark */ = AF7A1469113AEAD300F0D6F5 /* PBXTextBookmark */;
+			AF7A146A113AEAD300F0D6F5 /* PBXTextBookmark */ = AF7A146A113AEAD300F0D6F5 /* PBXTextBookmark */;
+			AF7A146E113AEB4100F0D6F5 /* PBXTextBookmark */ = AF7A146E113AEB4100F0D6F5 /* PBXTextBookmark */;
+			AF7A1472113AED8F00F0D6F5 /* PBXTextBookmark */ = AF7A1472113AED8F00F0D6F5 /* PBXTextBookmark */;
+			AF7A1473113AED8F00F0D6F5 /* PBXTextBookmark */ = AF7A1473113AED8F00F0D6F5 /* PBXTextBookmark */;
+			AF7A1474113AED8F00F0D6F5 /* PBXTextBookmark */ = AF7A1474113AED8F00F0D6F5 /* PBXTextBookmark */;
+			AF7A1478113AEE8000F0D6F5 /* PBXTextBookmark */ = AF7A1478113AEE8000F0D6F5 /* PBXTextBookmark */;
+			AF7A1479113AEE8000F0D6F5 /* PBXTextBookmark */ = AF7A1479113AEE8000F0D6F5 /* PBXTextBookmark */;
+			AF7A147A113AEE8000F0D6F5 /* PBXTextBookmark */ = AF7A147A113AEE8000F0D6F5 /* PBXTextBookmark */;
+			AF7A1480113AEF2D00F0D6F5 /* PBXTextBookmark */ = AF7A1480113AEF2D00F0D6F5 /* PBXTextBookmark */;
+			AF7A1486113AF05C00F0D6F5 /* PBXTextBookmark */ = AF7A1486113AF05C00F0D6F5 /* PBXTextBookmark */;
+			AF7A148A113AF5FB00F0D6F5 /* XCBuildMessageTextBookmark */ = AF7A148A113AF5FB00F0D6F5 /* XCBuildMessageTextBookmark */;
+			AF7A148B113AF5FB00F0D6F5 /* PBXTextBookmark */ = AF7A148B113AF5FB00F0D6F5 /* PBXTextBookmark */;
+			AF7A148E113AF61500F0D6F5 /* PBXTextBookmark */ = AF7A148E113AF61500F0D6F5 /* PBXTextBookmark */;
+			AF7A148F113AF61500F0D6F5 /* PBXTextBookmark */ = AF7A148F113AF61500F0D6F5 /* PBXTextBookmark */;
+			AF7A1490113AF61500F0D6F5 /* PBXTextBookmark */ = AF7A1490113AF61500F0D6F5 /* PBXTextBookmark */;
 			AF944A7310F93E5800C03788 = AF944A7310F93E5800C03788 /* PBXTextBookmark */;
 			AF944A8210F9405400C03788 = AF944A8210F9405400C03788 /* PBXTextBookmark */;
 		};
@@ -416,7 +444,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 29";
 		rLen = 0;
-		rLoc = 732;
+		rLoc = 764;
 		rType = 0;
 		vrLen = 641;
 		vrLoc = 0;
@@ -426,7 +454,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 187";
 		rLen = 0;
-		rLoc = 7287;
+		rLoc = 7426;
 		rType = 0;
 		vrLen = 571;
 		vrLoc = 0;
@@ -446,7 +474,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 29";
 		rLen = 0;
-		rLoc = 593;
+		rLoc = 625;
 		rType = 0;
 		vrLen = 915;
 		vrLoc = 377;
@@ -466,7 +494,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 1191;
+		rLoc = 1259;
 		rType = 0;
 		vrLen = 1046;
 		vrLoc = 500;
@@ -476,7 +504,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 38";
 		rLen = 0;
-		rLoc = 1205;
+		rLoc = 1273;
 		rType = 0;
 		vrLen = 995;
 		vrLoc = 500;
@@ -486,7 +514,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 32";
 		rLen = 0;
-		rLoc = 819;
+		rLoc = 852;
 		rType = 0;
 		vrLen = 911;
 		vrLoc = 463;
@@ -606,7 +634,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 44;
+		rLoc = 45;
 		rType = 1;
 	};
 	AF7A1320113974AF00F0D6F5 /* PBXTextBookmark */ = {
@@ -614,7 +642,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 41";
 		rLen = 0;
-		rLoc = 1164;
+		rLoc = 1196;
 		rType = 0;
 		vrLen = 648;
 		vrLoc = 685;
@@ -624,7 +652,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 265";
 		rLen = 0;
-		rLoc = 9113;
+		rLoc = 9396;
 		rType = 0;
 		vrLen = 1075;
 		vrLoc = 8794;
@@ -683,7 +711,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 34";
 		rLen = 0;
-		rLoc = 827;
+		rLoc = 859;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 453;
@@ -693,7 +721,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 265";
 		rLen = 0;
-		rLoc = 9113;
+		rLoc = 9396;
 		rType = 0;
 		vrLen = 1075;
 		vrLoc = 8794;
@@ -703,7 +731,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 1189;
+		rLoc = 1226;
 		rType = 0;
 		vrLen = 1034;
 		vrLoc = 500;
@@ -713,7 +741,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 40";
 		rLen = 0;
-		rLoc = 1189;
+		rLoc = 1226;
 		rType = 0;
 		vrLen = 1034;
 		vrLoc = 500;
@@ -723,7 +751,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 39";
 		rLen = 0;
-		rLoc = 1189;
+		rLoc = 1226;
 		rType = 0;
 		vrLen = 944;
 		vrLoc = 463;
@@ -733,7 +761,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 36";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 911;
 		rType = 0;
 		vrLen = 878;
 		vrLoc = 503;
@@ -753,7 +781,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 25";
 		rLen = 0;
-		rLoc = 578;
+		rLoc = 611;
 		rType = 0;
 		vrLen = 606;
 		vrLoc = 59;
@@ -792,7 +820,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 279";
 		rLen = 0;
-		rLoc = 9277;
+		rLoc = 9560;
 		rType = 0;
 		vrLen = 885;
 		vrLoc = 9752;
@@ -802,7 +830,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 283";
 		rLen = 0;
-		rLoc = 9300;
+		rLoc = 9583;
 		rType = 0;
 		vrLen = 887;
 		vrLoc = 7735;
@@ -812,7 +840,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 283";
 		rLen = 0;
-		rLoc = 9300;
+		rLoc = 9583;
 		rType = 0;
 		vrLen = 886;
 		vrLoc = 7735;
@@ -822,7 +850,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 49";
 		rLen = 37;
-		rLoc = 1556;
+		rLoc = 1686;
 		rType = 0;
 		vrLen = 914;
 		vrLoc = 505;
@@ -832,7 +860,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 285";
 		rLen = 0;
-		rLoc = 9301;
+		rLoc = 9584;
 		rType = 0;
 		vrLen = 874;
 		vrLoc = 9763;
@@ -842,7 +870,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 294";
 		rLen = 0;
-		rLoc = 9456;
+		rLoc = 9743;
 		rType = 0;
 		vrLen = 843;
 		vrLoc = 10039;
@@ -852,7 +880,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 284";
 		rLen = 0;
-		rLoc = 9301;
+		rLoc = 9584;
 		rType = 0;
 		vrLen = 908;
 		vrLoc = 10003;
@@ -862,7 +890,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 283";
 		rLen = 0;
-		rLoc = 9300;
+		rLoc = 9583;
 		rType = 0;
 		vrLen = 1179;
 		vrLoc = 9280;
@@ -872,7 +900,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 49";
 		rLen = 0;
-		rLoc = 1593;
+		rLoc = 1723;
 		rType = 0;
 		vrLen = 954;
 		vrLoc = 503;
@@ -882,7 +910,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 266";
 		rLen = 0;
-		rLoc = 9113;
+		rLoc = 9396;
 		rType = 0;
 		vrLen = 1179;
 		vrLoc = 9280;
@@ -892,7 +920,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 292";
 		rLen = 0;
-		rLoc = 9870;
+		rLoc = 10162;
 		rType = 0;
 		vrLen = 851;
 		vrLoc = 9939;
@@ -902,7 +930,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 26";
 		rLen = 0;
-		rLoc = 578;
+		rLoc = 611;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 138;
@@ -912,7 +940,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 47";
 		rLen = 0;
-		rLoc = 1445;
+		rLoc = 1535;
 		rType = 0;
 		vrLen = 983;
 		vrLoc = 559;
@@ -922,7 +950,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 39";
 		rLen = 0;
-		rLoc = 916;
+		rLoc = 948;
 		rType = 0;
 		vrLen = 983;
 		vrLoc = 559;
@@ -932,7 +960,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 32";
 		rLen = 0;
-		rLoc = 666;
+		rLoc = 698;
 		rType = 0;
 		vrLen = 983;
 		vrLoc = 559;
@@ -942,7 +970,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 292";
 		rLen = 0;
-		rLoc = 9675;
+		rLoc = 9967;
 		rType = 0;
 		vrLen = 966;
 		vrLoc = 9980;
@@ -952,7 +980,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 293";
 		rLen = 0;
-		rLoc = 9870;
+		rLoc = 10162;
 		rType = 0;
 		vrLen = 957;
 		vrLoc = 9980;
@@ -962,7 +990,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 54";
 		rLen = 40;
-		rLoc = 1632;
+		rLoc = 1762;
 		rType = 0;
 		vrLen = 1023;
 		vrLoc = 561;
@@ -972,7 +1000,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 293";
 		rLen = 0;
-		rLoc = 9870;
+		rLoc = 10162;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 9980;
@@ -982,7 +1010,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 301";
 		rLen = 0;
-		rLoc = 10506;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 785;
 		vrLoc = 10205;
@@ -992,7 +1020,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 299";
 		rLen = 0;
-		rLoc = 10083;
+		rLoc = 10375;
 		rType = 0;
 		vrLen = 884;
 		vrLoc = 10205;
@@ -1002,7 +1030,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 55";
 		rLen = 0;
-		rLoc = 1579;
+		rLoc = 1647;
 		rType = 0;
 		vrLen = 1078;
 		vrLoc = 896;
@@ -1012,7 +1040,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 52";
 		rLen = 0;
-		rLoc = 1450;
+		rLoc = 1518;
 		rType = 0;
 		vrLen = 990;
 		vrLoc = 1085;
@@ -1022,7 +1050,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 49";
 		rLen = 0;
-		rLoc = 1444;
+		rLoc = 1499;
 		rType = 0;
 		vrLen = 995;
 		vrLoc = 455;
@@ -1032,7 +1060,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 53";
 		rLen = 0;
-		rLoc = 1491;
+		rLoc = 1559;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -1042,7 +1070,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 28";
 		rLen = 0;
-		rLoc = 579;
+		rLoc = 612;
 		rType = 0;
 		vrLen = 772;
 		vrLoc = 99;
@@ -1052,7 +1080,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 49";
 		rLen = 0;
-		rLoc = 1444;
+		rLoc = 1499;
 		rType = 0;
 		vrLen = 1015;
 		vrLoc = 669;
@@ -1062,7 +1090,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 304";
 		rLen = 0;
-		rLoc = 10377;
+		rLoc = 10669;
 		rType = 0;
 		vrLen = 802;
 		vrLoc = 10430;
@@ -1072,7 +1100,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 300";
 		rLen = 0;
-		rLoc = 10082;
+		rLoc = 10374;
 		rType = 0;
 		vrLen = 925;
 		vrLoc = 10356;
@@ -1082,7 +1110,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 300";
 		rLen = 0;
-		rLoc = 10082;
+		rLoc = 10374;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 10446;
@@ -1092,7 +1120,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 300";
 		rLen = 0;
-		rLoc = 10082;
+		rLoc = 10374;
 		rType = 0;
 		vrLen = 846;
 		vrLoc = 10440;
@@ -1102,7 +1130,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 300";
 		rLen = 0;
-		rLoc = 10082;
+		rLoc = 10374;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 10446;
@@ -1112,7 +1140,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 304";
 		rLen = 0;
-		rLoc = 10377;
+		rLoc = 10669;
 		rType = 0;
 		vrLen = 856;
 		vrLoc = 10430;
@@ -1122,7 +1150,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 49";
 		rLen = 0;
-		rLoc = 1444;
+		rLoc = 1499;
 		rType = 0;
 		vrLen = 1049;
 		vrLoc = 635;
@@ -1132,7 +1160,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 304";
 		rLen = 0;
-		rLoc = 10377;
+		rLoc = 10669;
 		rType = 0;
 		vrLen = 906;
 		vrLoc = 10430;
@@ -1142,7 +1170,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 305";
 		rLen = 0;
-		rLoc = 10384;
+		rLoc = 10676;
 		rType = 0;
 		vrLen = 911;
 		vrLoc = 10430;
@@ -1152,7 +1180,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 298";
 		rLen = 0;
-		rLoc = 10015;
+		rLoc = 10307;
 		rType = 0;
 		vrLen = 905;
 		vrLoc = 10430;
@@ -1182,7 +1210,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 60";
 		rLen = 0;
-		rLoc = 1835;
+		rLoc = 2108;
 		rType = 0;
 		vrLen = 1259;
 		vrLoc = 421;
@@ -1192,7 +1220,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 261";
 		rLen = 0;
-		rLoc = 9282;
+		rLoc = 9565;
 		rType = 0;
 		vrLen = 1431;
 		vrLoc = 1295;
@@ -1202,7 +1230,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 276";
 		rLen = 0;
-		rLoc = 10088;
+		rLoc = 10380;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 8759;
@@ -1212,7 +1240,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 280";
 		rLen = 0;
-		rLoc = 10377;
+		rLoc = 10669;
 		rType = 0;
 		vrLen = 1434;
 		vrLoc = 8759;
@@ -1222,7 +1250,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1189;
+		rLoc = 1226;
 		rType = 0;
 		vrLen = 1408;
 		vrLoc = 385;
@@ -1232,7 +1260,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 58";
 		rLen = 0;
-		rLoc = 1674;
+		rLoc = 1804;
 		rType = 0;
 		vrLen = 1279;
 		vrLoc = 453;
@@ -1242,7 +1270,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 291";
 		rLen = 0;
-		rLoc = 11535;
+		rLoc = 12104;
 		rType = 0;
 		vrLen = 1414;
 		vrLoc = 9066;
@@ -1252,7 +1280,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 269";
 		rLen = 0;
-		rLoc = 9587;
+		rLoc = 9879;
 		rType = 0;
 		vrLen = 1408;
 		vrLoc = 9160;
@@ -1262,7 +1290,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 268";
 		rLen = 0;
-		rLoc = 9585;
+		rLoc = 9877;
 		rType = 0;
 		vrLen = 1414;
 		vrLoc = 9160;
@@ -1272,7 +1300,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 270";
 		rLen = 0;
-		rLoc = 9675;
+		rLoc = 9967;
 		rType = 0;
 		vrLen = 1181;
 		vrLoc = 8666;
@@ -1282,7 +1310,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 257";
 		rLen = 0;
-		rLoc = 9271;
+		rLoc = 9554;
 		rType = 0;
 		vrLen = 1469;
 		vrLoc = 1109;
@@ -1292,7 +1320,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 56";
 		rLen = 0;
-		rLoc = 1648;
+		rLoc = 1716;
 		rType = 0;
 		vrLen = 1394;
 		vrLoc = 1109;
@@ -1311,8 +1339,8 @@
 		isa = PBXTextBookmark;
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 69";
-		rLen = 49;
-		rLoc = 2061;
+		rLen = 91;
+		rLoc = 2158;
 		rType = 0;
 		vrLen = 1649;
 		vrLoc = 1606;
@@ -1321,8 +1349,8 @@
 		isa = PBXTextBookmark;
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 69";
-		rLen = 49;
-		rLoc = 2061;
+		rLen = 91;
+		rLoc = 2158;
 		rType = 0;
 		vrLen = 1649;
 		vrLoc = 1606;
@@ -1331,8 +1359,8 @@
 		isa = PBXTextBookmark;
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 69";
-		rLen = 49;
-		rLoc = 2061;
+		rLen = 91;
+		rLoc = 2158;
 		rType = 0;
 		vrLen = 1649;
 		vrLoc = 1606;
@@ -1341,13 +1369,13 @@
 		isa = PBXTextBookmark;
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 69";
-		rLen = 49;
-		rLoc = 2061;
+		rLen = 91;
+		rLoc = 2158;
 		rType = 0;
 		vrLen = 1109;
 		vrLoc = 0;
 	};
-	AF7A13E4113A31CD00F0D6F5 /* CocoaRestClientAppDelegate.m:290 */ = {
+	AF7A13E4113A31CD00F0D6F5 /* CocoaRestClientAppDelegate.m:302 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1359,7 +1387,7 @@
 		functionName = "-doneSaveRequest:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 290;
+		lineNumber = 302;
 		location = CocoaRestClient;
 		modificationTime = 289028347.387131;
 		originalNumberOfMultipleMatches = 1;
@@ -1370,7 +1398,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 281";
 		rLen = 0;
-		rLoc = 10377;
+		rLoc = 10669;
 		rType = 0;
 		vrLen = 1294;
 		vrLoc = 9119;
@@ -1380,7 +1408,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 277";
 		rLen = 0;
-		rLoc = 10083;
+		rLoc = 10375;
 		rType = 0;
 		vrLen = 1342;
 		vrLoc = 9066;
@@ -1390,7 +1418,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 277";
 		rLen = 0;
-		rLoc = 10083;
+		rLoc = 10375;
 		rType = 0;
 		vrLen = 1342;
 		vrLoc = 9066;
@@ -1400,7 +1428,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 280";
 		rLen = 0;
-		rLoc = 10214;
+		rLoc = 10506;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 8946;
@@ -1410,7 +1438,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 279";
 		rLen = 0;
-		rLoc = 10159;
+		rLoc = 10451;
 		rType = 0;
 		vrLen = 1462;
 		vrLoc = 8946;
@@ -1420,7 +1448,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 288";
 		rLen = 0;
-		rLoc = 10506;
+		rLoc = 10798;
 		rType = 0;
 		vrLen = 1314;
 		vrLoc = 9160;
@@ -1430,7 +1458,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 282";
 		rLen = 0;
-		rLoc = 10334;
+		rLoc = 10626;
 		rType = 0;
 		vrLen = 1339;
 		vrLoc = 9160;
@@ -1440,7 +1468,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 278";
 		rLen = 0;
-		rLoc = 10116;
+		rLoc = 10408;
 		rType = 0;
 		vrLen = 1360;
 		vrLoc = 9160;
@@ -1450,7 +1478,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 54";
 		rLen = 0;
-		rLoc = 1493;
+		rLoc = 1561;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 59;
@@ -1460,7 +1488,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 58";
 		rLen = 0;
-		rLoc = 1674;
+		rLoc = 1804;
 		rType = 0;
 		vrLen = 1311;
 		vrLoc = 421;
@@ -1470,7 +1498,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 58";
 		rLen = 0;
-		rLoc = 1674;
+		rLoc = 1804;
 		rType = 0;
 		vrLen = 1173;
 		vrLoc = 154;
@@ -1480,7 +1508,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 57";
 		rLen = 0;
-		rLoc = 1673;
+		rLoc = 1803;
 		rType = 0;
 		vrLen = 1159;
 		vrLoc = 56;
@@ -1490,7 +1518,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 294";
 		rLen = 0;
-		rLoc = 10910;
+		rLoc = 11202;
 		rType = 0;
 		vrLen = 1523;
 		vrLoc = 9258;
@@ -1500,12 +1528,12 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 300";
 		rLen = 0;
-		rLoc = 11253;
+		rLoc = 11635;
 		rType = 0;
 		vrLen = 1569;
 		vrLoc = 9362;
 	};
-	AF7A1417113A370700F0D6F5 /* CocoaRestClientAppDelegate.m:303 */ = {
+	AF7A1417113A370700F0D6F5 /* CocoaRestClientAppDelegate.m:319 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1517,7 +1545,7 @@
 		functionName = "-saveCurrentRequestAsDictionary";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 303;
+		lineNumber = 319;
 		location = CocoaRestClient;
 		modificationTime = 289028347.387542;
 		originalNumberOfMultipleMatches = 1;
@@ -1528,7 +1556,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 287";
 		rLen = 0;
-		rLoc = 10508;
+		rLoc = 10800;
 		rType = 0;
 		vrLen = 1569;
 		vrLoc = 9362;
@@ -1538,7 +1566,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 287";
 		rLen = 0;
-		rLoc = 10508;
+		rLoc = 10800;
 		rType = 0;
 		vrLen = 1603;
 		vrLoc = 9323;
@@ -1548,7 +1576,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 287";
 		rLen = 0;
-		rLoc = 10508;
+		rLoc = 10800;
 		rType = 0;
 		vrLen = 1603;
 		vrLoc = 9323;
@@ -1558,7 +1586,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 287";
 		rLen = 0;
-		rLoc = 10508;
+		rLoc = 10800;
 		rType = 0;
 		vrLen = 1603;
 		vrLoc = 9323;
@@ -1568,12 +1596,12 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 303";
 		rLen = 0;
-		rLoc = 11336;
+		rLoc = 11718;
 		rType = 0;
 		vrLen = 1470;
 		vrLoc = 9588;
 	};
-	AF7A1429113A38FB00F0D6F5 /* CocoaRestClientAppDelegate.m:292 */ = {
+	AF7A1429113A38FB00F0D6F5 /* CocoaRestClientAppDelegate.m:304 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1585,7 +1613,7 @@
 		functionName = "-doneSaveRequest:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 292;
+		lineNumber = 304;
 		location = CocoaRestClient;
 		modificationTime = 289028434.586834;
 		originalNumberOfMultipleMatches = 1;
@@ -1596,7 +1624,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 283";
 		rLen = 18;
-		rLoc = 10335;
+		rLoc = 10627;
 		rType = 0;
 		vrLen = 1470;
 		vrLoc = 9588;
@@ -1606,12 +1634,12 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 283";
 		rLen = 18;
-		rLoc = 10335;
+		rLoc = 10627;
 		rType = 0;
 		vrLen = 1470;
 		vrLoc = 9588;
 	};
-	AF7A142E113A395800F0D6F5 /* CocoaRestClientAppDelegate.m:270 */ = {
+	AF7A142E113A395800F0D6F5 /* CocoaRestClientAppDelegate.m:282 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1623,7 +1651,7 @@
 		functionName = "-outlineClick:";
 		hitCount = 3;
 		ignoreCount = 0;
-		lineNumber = 270;
+		lineNumber = 282;
 		location = CocoaRestClient;
 		modificationTime = 289028497.611638;
 		originalNumberOfMultipleMatches = 1;
@@ -1634,7 +1662,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 283";
 		rLen = 18;
-		rLoc = 10335;
+		rLoc = 10627;
 		rType = 0;
 		vrLen = 1457;
 		vrLoc = 9272;
@@ -1644,7 +1672,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 283";
 		rLen = 18;
-		rLoc = 10335;
+		rLoc = 10627;
 		rType = 0;
 		vrLen = 1457;
 		vrLoc = 9272;
@@ -1654,7 +1682,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 289";
 		rLen = 0;
-		rLoc = 10509;
+		rLoc = 10801;
 		rType = 0;
 		vrLen = 1475;
 		vrLoc = 9588;
@@ -1664,7 +1692,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 291";
 		rLen = 0;
-		rLoc = 10637;
+		rLoc = 10929;
 		rType = 0;
 		vrLen = 1504;
 		vrLoc = 9588;
@@ -1674,7 +1702,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 274";
 		rLen = 0;
-		rLoc = 9765;
+		rLoc = 10057;
 		rType = 0;
 		vrLen = 1765;
 		vrLoc = 9302;
@@ -1684,7 +1712,7 @@
 		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
 		name = "CocoaRestClientAppDelegate.h: 58";
 		rLen = 0;
-		rLoc = 1718;
+		rLoc = 1848;
 		rType = 0;
 		vrLen = 1380;
 		vrLoc = 455;
@@ -1694,7 +1722,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 273";
 		rLen = 43;
-		rLoc = 9677;
+		rLoc = 9969;
 		rType = 0;
 		vrLen = 1783;
 		vrLoc = 9302;
@@ -1704,10 +1732,289 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
 		name = "CocoaRestClientAppDelegate.m: 274";
 		rLen = 0;
-		rLoc = 9765;
+		rLoc = 10057;
 		rType = 0;
 		vrLen = 1701;
 		vrLoc = 9366;
+	};
+	AF7A1450113ABF9300F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
+		name = "CocoaRestClientAppDelegate.h: 61";
+		rLen = 0;
+		rLoc = 2101;
+		rType = 0;
+		vrLen = 1407;
+		vrLoc = 455;
+	};
+	AF7A1451113ABF9300F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 319";
+		rLen = 30;
+		rLoc = 12107;
+		rType = 0;
+		vrLen = 1538;
+		vrLoc = 10468;
+	};
+	AF7A1452113ABF9300F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 313";
+		rLen = 0;
+		rLoc = 11786;
+		rType = 0;
+		vrLen = 1538;
+		vrLoc = 10468;
+	};
+	AF7A1455113AC00100F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 329";
+		rLen = 0;
+		rLoc = 12506;
+		rType = 0;
+		vrLen = 1441;
+		vrLoc = 10711;
+	};
+	AF7A1456113AC0FF00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
+		name = "CocoaRestClientAppDelegate.h: 60";
+		rLen = 0;
+		rLoc = 1942;
+		rType = 0;
+		vrLen = 1384;
+		vrLoc = 535;
+	};
+	AF7A1457113AC0FF00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 333";
+		rLen = 23;
+		rLoc = 12572;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 11002;
+	};
+	AF7A1458113AC0FF00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 44";
+		rLen = 0;
+		rLoc = 1214;
+		rType = 0;
+		vrLen = 1231;
+		vrLoc = 255;
+	};
+	AF7A145D113AC13E00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
+		name = "CocoaRestClientAppDelegate.h: 61";
+		rLen = 0;
+		rLoc = 1990;
+		rType = 0;
+		vrLen = 1468;
+		vrLoc = 505;
+	};
+	AF7A145E113AC13E00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 346";
+		rLen = 57;
+		rLoc = 12896;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 11123;
+	};
+	AF7A145F113AC13E00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 329";
+		rLen = 0;
+		rLoc = 12442;
+		rType = 0;
+		vrLen = 1326;
+		vrLoc = 11123;
+	};
+	AF7A1463113AD87800F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 304";
+		rLen = 0;
+		rLoc = 11199;
+		rType = 0;
+		vrLen = 1680;
+		vrLoc = 9993;
+	};
+	AF7A1468113AEAD300F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
+		name = "CocoaRestClientAppDelegate.h: 61";
+		rLen = 0;
+		rLoc = 1990;
+		rType = 0;
+		vrLen = 1298;
+		vrLoc = 258;
+	};
+	AF7A1469113AEAD300F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 332";
+		rLen = 0;
+		rLoc = 12025;
+		rType = 0;
+		vrLen = 1590;
+		vrLoc = 10746;
+	};
+	AF7A146A113AEAD300F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 311";
+		rLen = 0;
+		rLoc = 11468;
+		rType = 0;
+		vrLen = 1575;
+		vrLoc = 10545;
+	};
+	AF7A146E113AEB4100F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 319";
+		rLen = 0;
+		rLoc = 11786;
+		rType = 0;
+		vrLen = 1548;
+		vrLoc = 10545;
+	};
+	AF7A1472113AED8F00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
+		name = "CocoaRestClientAppDelegate.h: 61";
+		rLen = 0;
+		rLoc = 1990;
+		rType = 0;
+		vrLen = 1298;
+		vrLoc = 258;
+	};
+	AF7A1473113AED8F00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 314";
+		rLen = 0;
+		rLoc = 11578;
+		rType = 0;
+		vrLen = 1536;
+		vrLoc = 10746;
+	};
+	AF7A1474113AED8F00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 328";
+		rLen = 0;
+		rLoc = 12071;
+		rType = 0;
+		vrLen = 1443;
+		vrLoc = 10746;
+	};
+	AF7A1478113AEE8000F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
+		name = "CocoaRestClientAppDelegate.h: 52";
+		rLen = 0;
+		rLoc = 1571;
+		rType = 0;
+		vrLen = 1459;
+		vrLoc = 559;
+	};
+	AF7A1479113AEE8000F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 321";
+		rLen = 0;
+		rLoc = 11830;
+		rType = 0;
+		vrLen = 1292;
+		vrLoc = 11431;
+	};
+	AF7A147A113AEE8000F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 214";
+		rLen = 0;
+		rLoc = 8061;
+		rType = 0;
+		vrLen = 1472;
+		vrLoc = 7267;
+	};
+	AF7A1480113AEF2D00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 268";
+		rLen = 0;
+		rLoc = 9565;
+		rType = 0;
+		vrLen = 1127;
+		vrLoc = 9144;
+	};
+	AF7A1486113AF05C00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 72";
+		rLen = 0;
+		rLoc = 2157;
+		rType = 0;
+		vrLen = 1557;
+		vrLoc = 1444;
+	};
+	AF7A148A113AF5FB00F0D6F5 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Statically allocated instance of Objective-C class 'NSDrawer'";
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 50;
+		rType = 1;
+	};
+	AF7A148B113AF5FB00F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
+		name = "CocoaRestClientAppDelegate.h: 51";
+		rLen = 0;
+		rLoc = 1477;
+		rType = 0;
+		vrLen = 762;
+		vrLoc = 1196;
+	};
+	AF7A148E113AF61500F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
+		name = "CocoaRestClientAppDelegate.h: 41";
+		rLen = 0;
+		rLoc = 965;
+		rType = 0;
+		vrLen = 1486;
+		vrLoc = 505;
+	};
+	AF7A148F113AF61500F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 48";
+		rLen = 0;
+		rLoc = 1259;
+		rType = 0;
+		vrLen = 1219;
+		vrLoc = 385;
+	};
+	AF7A1490113AF61500F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 40";
+		rLen = 0;
+		rLoc = 962;
+		rType = 0;
+		vrLen = 1394;
+		vrLoc = 762;
 	};
 	AF944A7310F93E5800C03788 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;

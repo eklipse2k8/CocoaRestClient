@@ -27,6 +27,7 @@
 	
 	NSMutableArray *headersTable;
 	
+	NSDrawer *savedRequestsDrawer;
 	NSMutableArray *savedRequestsArray;
 	NSOutlineView *savedOutlineView;
 	
@@ -47,10 +48,11 @@
 @property (assign) IBOutlet NSOutlineView *savedOutlineView;
 @property (assign) IBOutlet NSPanel *saveRequestSheet;
 @property (assign) IBOutlet NSTextField *saveRequestTextField;
-
+@property (assign) IBOutlet NSDrawer *savedRequestsDrawer;
 
 - (IBAction) runSubmit:(id)sender;
 - (IBAction) plusHeaderRow:(id)sender;
+- (IBAction) minusHeaderRow:(id)sender;
 - (IBAction) clearAuth:(id)sender;
 - (IBAction) outlineClick:(id)sender;
 - (IBAction) saveRequest:(id) sender;
@@ -58,5 +60,9 @@
 - (void) loadSavedRequest:(NSDictionary *) request;
 - (NSMutableDictionary *) saveCurrentRequestAsDictionary;
 - (IBAction) deleteSavedRequest:(id) sender;
+- (NSString *) pathForDataFile;
+- (void) loadDataFromDisk;
+- (void) saveDataToDisk;
+- (void) applicationWillTerminate: (NSNotification *)note;
 
 @end
