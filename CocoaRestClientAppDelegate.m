@@ -22,6 +22,9 @@
 @synthesize headersTableView;
 @synthesize username;
 @synthesize password;
+@synthesize savedOutlineView;
+@synthesize saveRequestSheet;
+@synthesize saveRequestTextField;
 
 - (id) init {
 	self = [super init];
@@ -31,6 +34,13 @@
 	[row setObject:@"text/plain" forKey:@"header-value"];
 	[row setObject:@"Content-Type" forKey:@"header-name"];
 	[headersTable addObject:row];
+	
+	savedRequestsArray = [[NSMutableArray alloc] init];
+	NSMutableDictionary *req1 = [[NSMutableDictionary alloc] init];
+	[req1 setObject:@"github feed" forKey:@"name"];
+	[req1 setObject:@"http://github.com/mmattozzi.atom" forKey:@"url"];
+	[req1 setObject:@"GET" forKey:@"method"];
+	[savedRequestsArray addObject:req1];
 	
 	return self;
 }
@@ -44,8 +54,9 @@
 	[methodButton addItemWithTitle:@"PUT"];
 	[methodButton addItemWithTitle:@"DELETE"];
 	[methodButton addItemWithTitle:@"HEAD"];
-	[[responseText textStorage] setFont:[NSFont fontWithName:@"Courier New" size:14]];
-	[[requestText textStorage] setFont:[NSFont fontWithName:@"Courier New" size:14]];
+	[responseText setFont:[NSFont fontWithName:@"Courier New" size:12]]; 
+	[responseTextHeaders setFont:[NSFont fontWithName:@"Courier New" size:12]];
+	[requestText setFont:[NSFont fontWithName:@"Courier New" size:12]];
 	[urlBox setNumberOfVisibleItems:10];
 }
 
@@ -210,6 +221,99 @@
 - (IBAction) clearAuth:(id)sender {
 	[username setStringValue:@""];
 	[password setStringValue:@""];
+}
+
+#pragma mark OutlineViewDataSource methods
+- (int) outlineView: (NSOutlineView *)outlineView numberOfChildrenOfItem: (id)item {
+	if (item == nil) {
+		return [savedRequestsArray count];
+	}
+	if (item == savedRequestsArray) {
+		return [item count];
+	}
+	return 0;
+}
+
+- (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item {
+    return NO;
+}
+
+- (id)outlineView:(NSOutlineView *)outlineView child:(int)index ofItem:(id)item {
+    if (item == nil) {
+        item = savedRequestsArray;
+    }
+    
+    if (item == savedRequestsArray) {
+        return [item objectAtIndex:index];
+    }
+    
+    return nil;
+}
+
+- (id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item {
+    if ([item isKindOfClass:[NSDictionary class]]) {
+		return [item objectForKey:@"name"];
+	}
+	else if (item == savedRequestsArray) {
+		return savedRequestsArray;
+    }
+    
+    return nil;
+}
+
+// Respond to click on a row of the saved requests outline view
+- (IBAction) outlineClick:(id)sender {
+	NSAlert *alert = [NSAlert new];
+	[alert setMessageText:[NSString stringWithFormat:@"Selected %@", [savedOutlineView itemAtRow:[savedOutlineView selectedRow]]]];
+	[alert runModal];
+	
+	[self loadSavedRequest:[savedOutlineView itemAtRow:[savedOutlineView selectedRow]]];
+}
+
+- (IBAction) deleteSavedRequest:(id) sender {
+	int row = [savedOutlineView selectedRow];
+	[savedRequestsArray removeObjectAtIndex:row];
+	[savedOutlineView reloadItem:nil reloadChildren:YES];
+}
+
+// Save an HTTP request into the request drawer
+- (IBAction) saveRequest:(id) sender {
+	[NSApp beginSheet:saveRequestSheet modalForWindow:window
+        modalDelegate:self didEndSelector:NULL contextInfo:nil];
+}
+
+// Dispose of save request sheet
+- (IBAction) doneSaveRequest:(id) sender {
+	if ([sender isKindOfClass:[NSTextField class]] || ! [[sender title] isEqualToString:@"Cancel"]) {
+		NSMutableDictionary *savedReq = [self saveCurrentRequestAsDictionary];
+		[savedRequestsArray addObject:savedReq];
+		[savedOutlineView reloadItem:nil reloadChildren:YES];
+	}
+	[saveRequestSheet orderOut:nil];
+    [NSApp endSheet:saveRequestSheet];
+}
+
+- (NSMutableDictionary *) saveCurrentRequestAsDictionary {
+	NSMutableDictionary *savedReq = [[NSMutableDictionary alloc] init];
+	[savedReq setObject:[saveRequestTextField stringValue] forKey:@"name"];
+	[savedReq setObject:[urlBox stringValue] forKey:@"url"];
+	[savedReq setObject:[methodButton titleOfSelectedItem] forKey:@"method"];
+	[savedReq setObject:[[NSString alloc] initWithString:[requestText string]] forKey:@"body"];
+	[savedReq setObject:[username stringValue] forKey:@"username"];
+	[savedReq setObject:[password stringValue] forKey:@"password"];
+	return savedReq;
+}
+
+- (void) loadSavedRequest:(NSDictionary *) request {
+	[urlBox setStringValue:[request objectForKey:@"url"]];
+	[methodButton selectItemWithTitle:[request objectForKey:@"method"]];
+	if ([request objectForKey:@"body"]) {
+		[requestText setString:[request objectForKey:@"body"]];
+	} else {
+		[requestText setString:@""];
+	}
+	[username setStringValue:[request objectForKey:@"username"]];
+	[password setStringValue:[request objectForKey:@"password"]]; 
 }
 
 @end

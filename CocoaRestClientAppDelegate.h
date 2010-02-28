@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface CocoaRestClientAppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource> {
+@interface CocoaRestClientAppDelegate : NSObject {
     NSWindow *window;
 	
 	NSComboBox *urlBox;
@@ -26,6 +26,12 @@
 	NSString *contentType;
 	
 	NSMutableArray *headersTable;
+	
+	NSMutableArray *savedRequestsArray;
+	NSOutlineView *savedOutlineView;
+	
+	NSPanel *saveRequestSheet;
+	NSTextField *saveRequestTextField;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -38,9 +44,19 @@
 @property (assign) IBOutlet NSTableView *headersTableView;
 @property (assign) IBOutlet NSTextField *username;
 @property (assign) IBOutlet NSTextField *password;
+@property (assign) IBOutlet NSOutlineView *savedOutlineView;
+@property (assign) IBOutlet NSPanel *saveRequestSheet;
+@property (assign) IBOutlet NSTextField *saveRequestTextField;
+
 
 - (IBAction) runSubmit:(id)sender;
 - (IBAction) plusHeaderRow:(id)sender;
 - (IBAction) clearAuth:(id)sender;
+- (IBAction) outlineClick:(id)sender;
+- (IBAction) saveRequest:(id) sender;
+- (IBAction) doneSaveRequest:(id) sender;
+- (void) loadSavedRequest:(NSDictionary *) request;
+- (NSMutableDictionary *) saveCurrentRequestAsDictionary;
+- (IBAction) deleteSavedRequest:(id) sender;
 
 @end
