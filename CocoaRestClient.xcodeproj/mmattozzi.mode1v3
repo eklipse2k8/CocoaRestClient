@@ -280,7 +280,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {267, 688}}</string>
+							<string>{{0, 0}, {267, 602}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -292,14 +292,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {284, 706}}</string>
+						<string>{{0, 0}, {284, 620}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>267</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>96 119 1221 747 0 0 1440 878 </string>
+						<string>95 205 1228 661 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CocoaRestClientAppDelegate.m</string>
+								<string>CocoaRestClientAppDelegate.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>CocoaRestClientAppDelegate.m</string>
+										<string>CocoaRestClientAppDelegate.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AF7A1490113AF61500F0D6F5</string>
+										<string>AF7A14A5113B596400F0D6F5</string>
 										<key>history</key>
 										<array>
 											<string>AF1FC48710F435C300ED5A57</string>
@@ -342,8 +342,10 @@
 											<string>AF7A132C1139754A00F0D6F5</string>
 											<string>AF7A13B3113A2A4100F0D6F5</string>
 											<string>AF7A13B4113A2A4100F0D6F5</string>
-											<string>AF7A148E113AF61500F0D6F5</string>
-											<string>AF7A148F113AF61500F0D6F5</string>
+											<string>AF7A149E113B588400F0D6F5</string>
+											<string>AF7A14A2113B596400F0D6F5</string>
+											<string>AF7A14A3113B596400F0D6F5</string>
+											<string>AF7A14A4113B596400F0D6F5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -355,14 +357,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {932, 555}}</string>
+								<string>{{0, 0}, {939, 367}}</string>
 								<key>RubberWindowFrame</key>
-								<string>96 119 1221 747 0 0 1440 878 </string>
+								<string>95 205 1228 661 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>555pt</string>
+							<string>367pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -375,18 +377,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 560}, {932, 146}}</string>
+								<string>{{0, 372}, {939, 248}}</string>
 								<key>RubberWindowFrame</key>
-								<string>96 119 1221 747 0 0 1440 878 </string>
+								<string>95 205 1228 661 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>146pt</string>
+							<string>248pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>932pt</string>
+					<string>939pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -550,7 +552,7 @@
 		<string>/Users/mmattozzi/xcode/CocoaRestClient/CocoaRestClient.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>96 119 1221 747 0 0 1440 878 </string>
+	<string>95 205 1228 661 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

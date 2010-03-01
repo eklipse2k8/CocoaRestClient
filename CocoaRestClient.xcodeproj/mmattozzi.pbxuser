@@ -9,16 +9,16 @@
 	};
 	256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {871, 897}}";
-			sepNavSelRange = "{965, 0}";
-			sepNavVisRange = "{505, 1486}";
+			sepNavIntBoundsRect = "{{0, 0}, {878, 923}}";
+			sepNavSelRange = "{859, 0}";
+			sepNavVisRange = "{592, 980}";
 		};
 	};
 	256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {871, 4979}}";
-			sepNavSelRange = "{962, 0}";
-			sepNavVisRange = "{762, 1394}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 4810}}";
+			sepNavSelRange = "{12326, 0}";
+			sepNavVisRange = "{12072, 916}";
 		};
 	};
 	256AC3F00F4B6AF500CF3369 /* CocoaRestClient_Prefix.pch */ = {
@@ -74,7 +74,7 @@
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
-					693,
+					700,
 					20,
 					20,
 					48,
@@ -97,7 +97,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					653,
+					660,
 					60,
 					20,
 					48,
@@ -273,6 +273,13 @@
 			AF7A148E113AF61500F0D6F5 /* PBXTextBookmark */ = AF7A148E113AF61500F0D6F5 /* PBXTextBookmark */;
 			AF7A148F113AF61500F0D6F5 /* PBXTextBookmark */ = AF7A148F113AF61500F0D6F5 /* PBXTextBookmark */;
 			AF7A1490113AF61500F0D6F5 /* PBXTextBookmark */ = AF7A1490113AF61500F0D6F5 /* PBXTextBookmark */;
+			AF7A149E113B588400F0D6F5 /* PBXTextBookmark */ = AF7A149E113B588400F0D6F5 /* PBXTextBookmark */;
+			AF7A149F113B588400F0D6F5 /* PBXBookmark */ = AF7A149F113B588400F0D6F5 /* PBXBookmark */;
+			AF7A14A0113B588400F0D6F5 /* PBXBookmark */ = AF7A14A0113B588400F0D6F5 /* PBXBookmark */;
+			AF7A14A2113B596400F0D6F5 /* PBXBookmark */ = AF7A14A2113B596400F0D6F5 /* PBXBookmark */;
+			AF7A14A3113B596400F0D6F5 /* PBXTextBookmark */ = AF7A14A3113B596400F0D6F5 /* PBXTextBookmark */;
+			AF7A14A4113B596400F0D6F5 /* PBXTextBookmark */ = AF7A14A4113B596400F0D6F5 /* PBXTextBookmark */;
+			AF7A14A5113B596400F0D6F5 /* PBXTextBookmark */ = AF7A14A5113B596400F0D6F5 /* PBXTextBookmark */;
 			AF944A7310F93E5800C03788 = AF944A7310F93E5800C03788 /* PBXTextBookmark */;
 			AF944A8210F9405400C03788 = AF944A8210F9405400C03788 /* PBXTextBookmark */;
 		};
@@ -299,6 +306,13 @@
 			sepNavIntBoundsRect = "{{0, 0}, {871, 663}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{340, 1957}";
+		};
+	};
+	AF074F4D10F595AF00EE44D8 /* NSObject+SBJSON.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {878, 598}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{3, 1437}";
 		};
 	};
 	AF074F4E10F595AF00EE44D8 /* NSString+SBJSON.h */ = {
@@ -2015,6 +2029,58 @@
 		rType = 0;
 		vrLen = 1394;
 		vrLoc = 762;
+	};
+	AF7A149E113B588400F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaRestClientAppDelegate.m */;
+		name = "CocoaRestClientAppDelegate.m: 345";
+		rLen = 0;
+		rLoc = 12326;
+		rType = 0;
+		vrLen = 884;
+		vrLoc = 12104;
+	};
+	AF7A149F113B588400F0D6F5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = AF7A149A113B583A00F0D6F5 /* cocoaRestClient.icns */;
+	};
+	AF7A14A0113B588400F0D6F5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = AF7A149A113B583A00F0D6F5 /* cocoaRestClient.icns */;
+	};
+	AF7A14A2113B596400F0D6F5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = AF7A149A113B583A00F0D6F5 /* cocoaRestClient.icns */;
+	};
+	AF7A14A3113B596400F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AF074F4D10F595AF00EE44D8 /* NSObject+SBJSON.m */;
+		name = "NSObject+SBJSON.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1437;
+		vrLoc = 3;
+	};
+	AF7A14A4113B596400F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
+		name = "CocoaRestClientAppDelegate.h: 41";
+		rLen = 0;
+		rLoc = 965;
+		rType = 0;
+		vrLen = 980;
+		vrLoc = 592;
+	};
+	AF7A14A5113B596400F0D6F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaRestClientAppDelegate.h */;
+		name = "CocoaRestClientAppDelegate.h: 39";
+		rLen = 0;
+		rLoc = 859;
+		rType = 0;
+		vrLen = 980;
+		vrLoc = 592;
 	};
 	AF944A7310F93E5800C03788 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
