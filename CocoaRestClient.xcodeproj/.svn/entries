@@ -1,14 +1,14 @@
 10
 
 dir
-16
+23
 https://cocoa-rest-client.googlecode.com/svn/trunk/CocoaRestClient.xcodeproj
 https://cocoa-rest-client.googlecode.com/svn
 
 
 
-2010-12-04T18:08:29.721127Z
-16
+2011-01-16T21:21:11.064141Z
+23
 mike.mattozzi
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2010-12-04T18:52:43.000000Z
+2011-05-16T00:52:28.000000Z
 886e0992ff93f80d7d589820fb28fbdc
 2010-07-12T04:34:10.651392Z
 14
@@ -60,47 +60,13 @@ aventurella
 
 44594
 
-mmattozzi.pbxuser
-file
-23
-
-
-
-2011-01-16T21:04:37.000000Z
-e6e077b6532331ad126d8efa023615ba
-2011-01-16T21:21:11.064141Z
-23
-mike.mattozzi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-25849
-
 dev.pbxuser
 file
 
 
 
 
-2010-12-04T18:52:43.000000Z
+2011-05-16T00:52:28.000000Z
 5311b890cc341093c7970d5b9b19b604
 2010-07-12T04:34:10.651392Z
 14
@@ -128,14 +94,14 @@ aventurella
 
 32896
 
-project.pbxproj
+mmattozzi.pbxuser
 file
-23
 
 
 
-2011-01-16T21:04:37.000000Z
-f2bc2ed0c49dccc294882b70f8a07bb7
+
+2011-05-16T00:52:28.000000Z
+e6e077b6532331ad126d8efa023615ba
 2011-01-16T21:21:11.064141Z
 23
 mike.mattozzi
@@ -160,15 +126,49 @@ mike.mattozzi
 
 
 
-21048
+25849
+
+project.pbxproj
+file
+35
+
+
+
+2011-11-27T20:18:02.000000Z
+c6d431bff8eea28bf7787f97ff4ef0b7
+2011-11-27T20:19:05.348381Z
+35
+mike.mattozzi@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+23076
 
 mmattozzi.mode1v3
 file
-23
 
 
 
-2011-01-16T21:04:21.000000Z
+
+2011-05-16T00:52:28.000000Z
 0c5633bb2fd9be3024f9029f13b17e0f
 2011-01-16T21:21:11.064141Z
 23

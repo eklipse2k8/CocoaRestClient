@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class CRCRequest;
+
 @interface CocoaRestClientAppDelegate : NSObject {
     NSWindow *window;
 	
@@ -43,6 +45,9 @@
 	NSTextField *timeoutField;
 	
 	NSInteger timeout;
+    
+    BOOL allowSelfSignedCerts;
+    BOOL followRedirects;
 	
 	NSButton *plusParam;
 	NSButton *minusParam;
@@ -51,6 +56,9 @@
 	NSTabViewItem *reqHeadersTab;
 	NSDate *startDate;
 	NSTextField *status;
+    
+    @private 
+    CRCRequest *lastRequest;
 	
 }
 
@@ -109,7 +117,10 @@
 - (IBAction) handleOpenWindow:(id)sender;
 - (BOOL)validateMenuItem:(NSMenuItem *)item;
 - (IBAction) helpInfo:(id)sender;
+- (IBAction) licenseInfo:(id)sender;
 - (IBAction) reloadLastRequest:(id)sender;
+- (IBAction) allowSelfSignedCerts:(id)sender;
+- (IBAction) followRedirects:(id)sender;
 
 - (void)setRawRequestInput:(BOOL)value;
 

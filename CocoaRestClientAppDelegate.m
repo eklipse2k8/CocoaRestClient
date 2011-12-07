@@ -30,7 +30,6 @@ static CRCContentType requestContentType;
 
 
 @interface CocoaRestClientAppDelegate(Private)
-CRCRequest *lastRequest;
 - (void)determineRequestContentType;
 - (void)loadSavedDictionary:(NSDictionary *)request;
 - (void)loadSavedCRCRequest:(CRCRequest *)request;
@@ -66,7 +65,9 @@ CRCRequest *lastRequest;
 	self = [super init];
 	
 	timeout = 20; 
-	
+	allowSelfSignedCerts = YES;
+    followRedirects = YES;
+    
 	headersTable = [[NSMutableArray alloc] init];
 	filesTable   = [[NSMutableArray alloc] init];
 	paramsTable  = [[NSMutableArray alloc] init];
@@ -294,13 +295,18 @@ CRCRequest *lastRequest;
 	//[responseText setString:[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]];
 }
 
+-(NSCachedURLResponse *)connection:(NSURLConnection *)connection
+                 willCacheResponse:(NSCachedURLResponse *)cachedResponse {
+    return nil;
+}
+
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
 	NSLog(@"Did receive response");
 	
 	[status setStringValue:@"Receiving Data..."];
 	NSMutableString *headers = [[NSMutableString alloc] init];
 	NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
-	[headers appendFormat:@"HTTP %d\n\n", [httpResponse statusCode]];
+	[headers appendFormat:@"HTTP %d %@\n\n", [httpResponse statusCode], [[NSHTTPURLResponse localizedStringForStatusCode:[httpResponse statusCode]] capitalizedString]];
 	
 	[headersTab setLabel:[NSString stringWithFormat:@"Response Headers (%d)", [httpResponse statusCode]]];
 	
@@ -309,7 +315,7 @@ CRCRequest *lastRequest;
 		[headers appendFormat:@"%@: %@\n", key, [headerDict objectForKey:key]];
 		if ([key isEqualToString:@"Content-Type"]) {
 			NSString *contentTypeLine = [headerDict objectForKey:key];
-			NSArray *parts = [contentTypeLine componentsSeparatedByString:@"; "];
+			NSArray *parts = [contentTypeLine componentsSeparatedByString:@";"];
 			contentType = [[NSString alloc] initWithString:[parts objectAtIndex:0]];
 			NSLog(@"Got content type = %@", contentType);
 		}
@@ -325,18 +331,51 @@ CRCRequest *lastRequest;
 	[status setStringValue:@"Failed"];
 }
 
+// This controls if HTTP redirects are followed
+- (NSURLRequest *)connection: (NSURLConnection *)inConnection
+             willSendRequest: (NSURLRequest *)inRequest
+            redirectResponse: (NSURLResponse *)inRedirectResponse;
+{
+    if (inRedirectResponse) {
+        if (! followRedirects) {
+            return nil;
+        } else {
+            NSMutableURLRequest *r = [[inRequest mutableCopy] autorelease]; // original request
+            [r setURL: [inRequest URL]];
+            return r;
+        }
+    } else {
+        return inRequest;
+    }
+}
+
+- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
+    if ([protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodClientCertificate]) {
+        return NO;
+    } else if ([protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]) {
+        return allowSelfSignedCerts;
+    } else {
+        return YES;
+    }
+}
+
 -(void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
 {
-	if ([challenge previousFailureCount] == 0) {
-		NSURLCredential *newCredential;
-		newCredential = [NSURLCredential credentialWithUser:[username stringValue]
-												   password:[password stringValue]
-												persistence:NSURLCredentialPersistenceNone];
-		[[challenge sender] useCredential:newCredential forAuthenticationChallenge:challenge];
-	} else {
-		[[challenge sender] cancelAuthenticationChallenge:challenge];
-		[responseText setString:@"Authentication Failed"];
-	}
+    if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]) {
+        [challenge.sender useCredential:[NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust] forAuthenticationChallenge:challenge];
+        [challenge.sender continueWithoutCredentialForAuthenticationChallenge:challenge];
+    } else {
+        if ([challenge previousFailureCount] == 0) {
+            NSURLCredential *newCredential;
+            newCredential = [NSURLCredential credentialWithUser:[username stringValue]
+                                                       password:[password stringValue]
+                                                    persistence:NSURLCredentialPersistenceNone];
+            [[challenge sender] useCredential:newCredential forAuthenticationChallenge:challenge];
+        } else {
+            [[challenge sender] cancelAuthenticationChallenge:challenge];
+            [responseText setString:@"Authentication Failed"];
+        }
+    }
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -360,11 +399,14 @@ CRCRequest *lastRequest;
 			NSLog(@"Formatting JSON");
 			SBJSON *parser = [[SBJSON alloc] init];
 			[parser setHumanReadable:YES];
-			id jsonObj = [parser objectWithString:[[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding]];
+            NSString *jsonStringFromData = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+			id jsonObj = [parser objectWithString:jsonStringFromData];
 			NSString *jsonFormattedString = [[NSString alloc] initWithString:[parser stringWithObject:jsonObj]]; 
 			[responseText setString:jsonFormattedString];
 			needToPrintPlain = NO;
 			[parser release];
+            [jsonStringFromData release];
+            [jsonObj release];
 		}
 	} 
 	
@@ -484,6 +526,26 @@ CRCRequest *lastRequest;
 	}
 
 	[tabView selectTabViewItem:reqHeadersTab];
+}
+
+- (IBAction) allowSelfSignedCerts:(id)sender {
+    if ([sender state] == NSOnState) {
+        allowSelfSignedCerts = NO;
+        [sender setState:NSOffState];
+    } else {
+        allowSelfSignedCerts = YES;
+        [sender setState:NSOnState];
+    }
+}
+
+- (IBAction) followRedirects:(id)sender {
+    if ([sender state] == NSOnState) {
+        followRedirects = NO;
+        [sender setState:NSOffState];
+    } else {
+        followRedirects = YES;
+        [sender setState:NSOnState];
+    }
 }
 
 #pragma mark Table view methods
@@ -827,6 +889,10 @@ CRCRequest *lastRequest;
 
 - (IBAction) helpInfo:(id)sender {
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://code.google.com/p/cocoa-rest-client/"]]; 
+}
+
+- (IBAction) licenseInfo:(id)sender {
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://cocoa-rest-client.googlecode.com/svn/trunk/LICENSE.txt"]]; 
 }
 
 - (IBAction) reloadLastRequest:(id)sender {

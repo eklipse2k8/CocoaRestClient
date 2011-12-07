@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 48
-/svn/!svn/ver/16/trunk/CocoaRestClient.xcodeproj
+/svn/!svn/ver/23/trunk/CocoaRestClient.xcodeproj
 END
 dev.perspectivev3
 K 25
@@ -9,23 +9,23 @@ svn:wc:ra_dav:version-url
 V 66
 /svn/!svn/ver/14/trunk/CocoaRestClient.xcodeproj/dev.perspectivev3
 END
-mmattozzi.pbxuser
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svn/!svn/ver/23/trunk/CocoaRestClient.xcodeproj/mmattozzi.pbxuser
-END
 dev.pbxuser
 K 25
 svn:wc:ra_dav:version-url
 V 60
 /svn/!svn/ver/14/trunk/CocoaRestClient.xcodeproj/dev.pbxuser
 END
+mmattozzi.pbxuser
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/23/trunk/CocoaRestClient.xcodeproj/mmattozzi.pbxuser
+END
 project.pbxproj
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svn/!svn/ver/23/trunk/CocoaRestClient.xcodeproj/project.pbxproj
+/svn/!svn/ver/35/trunk/CocoaRestClient.xcodeproj/project.pbxproj
 END
 mmattozzi.mode1v3
 K 25
