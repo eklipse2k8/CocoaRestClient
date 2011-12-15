@@ -75,32 +75,8 @@ static CRCContentType requestContentType;
 	NSMutableDictionary *row = [[NSMutableDictionary alloc] init];
 	
 	[row setObject:@"Content-Type" forKey:@"key"];
-	//[row setObject:@"multipart/form-data" forKey:@"value"];
 	[row setObject:@"application/x-www-form-urlencoded" forKey:@"value"];
 	[headersTable addObject:row];
-	
-	/*row = [[NSMutableDictionary alloc] init];
-	[row setObject:@"X-HTTP-Method-Override" forKey:@"key"];
-	[row setObject:@"PUT" forKey:@"value"];
-	[headersTable addObject:row];
-	[row release];
-	
-	row = [[NSMutableDictionary alloc] init];
-	[row setObject:@"nano" forKey:@"key"];
-	[row setObject:@"bot" forKey:@"value"];
-	[paramsTable addObject:row];
-	[row release];
-	 */
-	
-	
-	/*
-	savedRequestsArray = [[NSMutableArray alloc] init];
-	NSMutableDictionary *req1 = [[NSMutableDictionary alloc] init];
-	[req1 setObject:@"github feed" forKey:@"name"];
-	[req1 setObject:@"http://github.com/mmattozzi.atom" forKey:@"url"];
-	[req1 setObject:@"GET" forKey:@"method"];
-	[savedRequestsArray addObject:req1];
-	*/
 	[self loadDataFromDisk];
 	 
 	return self;
@@ -188,11 +164,6 @@ static CRCContentType requestContentType;
 	[self determineRequestContentType];
 	NSLog(@"Got submit press");
 	
-	// NSAlert *alert = [NSAlert new];
-	// [alert setMessageText:@"Clicked submit"];
-	// [alert setInformativeText: [urlBox stringValue]];
-	// [alert runModal];
-	
 	// Append http if it's not there
 	NSString *urlStr = [urlBox stringValue];
 	if (! [urlStr hasPrefix:@"http"] && ! [urlStr hasPrefix:@"https"]) {
@@ -266,11 +237,6 @@ static CRCContentType requestContentType;
 	
 	NSLog(@"Sending method %@", method);
 	
-	//NSURLResponse *response = [[NSURLResponse alloc] init];
-	//NSError *error = [[NSError alloc] init];
-	//NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-	//[responseText setString:[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]];
-	
 	lastRequest = [CRCRequest requestWithApplication:self];
 	
 	startDate = [NSDate date];
@@ -285,7 +251,6 @@ static CRCContentType requestContentType;
 #pragma mark Url Connection Delegate methods
 - (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
 	[receivedData appendData:data];
-	//[responseText setString:[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]];
 }
 
 -(NSCachedURLResponse *)connection:(NSURLConnection *)connection
@@ -436,9 +401,6 @@ static CRCContentType requestContentType;
 	[picker setCanChooseDirectories:NO];
 	[picker setAllowsMultipleSelection:NO];
 	
-
-	// 10.6
-	/*
 	[picker beginSheetModalForWindow:window completionHandler:^(NSInteger actionStatus) {
 		if(actionStatus == NSOKButton)
 		{
@@ -453,31 +415,9 @@ static CRCContentType requestContentType;
 				[filesTableView reloadData];
 				[filesTableView selectRow:([filesTable count] - 1) byExtendingSelection:NO];
 				[filesTableView editColumn:0 row:([filesTable count] - 1) withEvent:nil select:YES];
-				[row release];
 			}
 		}
 	}];
-	 */
-
-	// 10.5
-	if ( [picker runModalForDirectory:nil file:nil] == NSOKButton )
-	{
-		
-		for(NSURL* url in [picker URLs])
-		{
-			NSMutableDictionary *row = [[NSMutableDictionary alloc] init];
-			[row setObject:@"" forKey:@"key"];
-			[row setObject:[url relativePath] forKey:@"value"];
-			[row setObject:url  forKey:@"url"];
-			
-			[filesTable addObject:row];
-			[filesTableView reloadData];
-			[filesTableView selectRow:([filesTable count] - 1) byExtendingSelection:NO];
-			[filesTableView editColumn:0 row:([filesTable count] - 1) withEvent:nil select:YES];
-		}
-
-	}
-
 }
 
 - (IBAction) minusFileRow:(id)sender {
