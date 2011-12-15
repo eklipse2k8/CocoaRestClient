@@ -11,21 +11,22 @@
 @class CRCRequest;
 
 @interface CocoaRestClientAppDelegate : NSObject {
-    NSWindow *window;
+    @private 
+    __unsafe_unretained NSWindow *window;
 	
-	NSComboBox *urlBox;
-	NSButton *submitButton;
-	NSTextView *requestText;
-	NSTextView *responseText;
-	NSTabViewItem *headersTab;
-	NSTextView *responseTextHeaders;
-	NSPopUpButton *methodButton;
-	NSTableView *headersTableView;
-	NSTableView *filesTableView;
-	NSTableView *paramsTableView;
+	__unsafe_unretained NSComboBox *urlBox;
+	__unsafe_unretained NSButton *submitButton;
+	__unsafe_unretained NSTextView *requestText;
+	__unsafe_unretained NSTextView *responseText;
+	__unsafe_unretained NSTabViewItem *headersTab;
+	__unsafe_unretained NSTextView *responseTextHeaders;
+	__unsafe_unretained NSPopUpButton *methodButton;
+	__unsafe_unretained NSTableView *headersTableView;
+	__unsafe_unretained NSTableView *filesTableView;
+	__unsafe_unretained NSTableView *paramsTableView;
 	
-	NSTextField *username;
-	NSTextField *password;
+	__unsafe_unretained NSTextField *username;
+	__unsafe_unretained NSTextField *password;
 	
 	NSMutableData *receivedData;
 	NSString *contentType;
@@ -34,30 +35,30 @@
 	NSMutableArray *filesTable;
 	NSMutableArray *paramsTable;
 	
-	NSDrawer *savedRequestsDrawer;
-	NSMutableArray *savedRequestsArray;
-	NSOutlineView *savedOutlineView;
+	__unsafe_unretained NSDrawer *savedRequestsDrawer;
+    NSMutableArray *savedRequestsArray;
+	__unsafe_unretained NSOutlineView *savedOutlineView;
 	
-	NSPanel *saveRequestSheet;
-	NSTextField *saveRequestTextField;
+	__unsafe_unretained NSPanel *saveRequestSheet;
+	__unsafe_unretained NSTextField *saveRequestTextField;
 	
-	NSPanel *timeoutSheet;
-	NSTextField *timeoutField;
+	__unsafe_unretained NSPanel *timeoutSheet;
+	__unsafe_unretained NSTextField *timeoutField;
 	
 	NSInteger timeout;
     
     BOOL allowSelfSignedCerts;
     BOOL followRedirects;
 	
-	NSButton *plusParam;
-	NSButton *minusParam;
+	__unsafe_unretained NSButton *plusParam;
+	__unsafe_unretained NSButton *minusParam;
 	BOOL rawRequestInput;
-	NSTabView *tabView;
-	NSTabViewItem *reqHeadersTab;
+	__unsafe_unretained NSTabView *tabView;
+	__unsafe_unretained NSTabViewItem *reqHeadersTab;
 	NSDate *startDate;
-	NSTextField *status;
+	__unsafe_unretained NSTextField *status;
     
-    @private 
+
     CRCRequest *lastRequest;
 	
 }

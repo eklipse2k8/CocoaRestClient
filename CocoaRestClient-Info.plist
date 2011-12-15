@@ -13,7 +13,7 @@
 	<key>CFBundleIconFile</key>
 	<string>cocoaRestClient.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.restlesscode.cocoarestclient</string>
+	<string>com.artcator.cocoarestclient</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -29,7 +29,7 @@
 	<key>CFBundleVersion</key>
 	<string>4</string>
 	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.utilities</string>
+	<string>public.app-category.developer-tools</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSMainNibFile</key>

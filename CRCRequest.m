@@ -36,7 +36,7 @@
 	if([application.filesTable count] > 0)
 		request.files = [[NSArray alloc] initWithArray:application.filesTable copyItems:YES];
 	
-	return [request autorelease];
+	return request;
 }
 
 - (void) encodeWithCoder: (NSCoder *)coder 
@@ -83,7 +83,5 @@
 	self.headers = nil;
 	self.files = nil;
 	self.params = nil;
-	
-	[super dealloc];
 }
 @end

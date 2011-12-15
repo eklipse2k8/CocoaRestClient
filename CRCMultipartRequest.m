@@ -49,8 +49,7 @@
 				}
 				else 
 				{
-					if ((mimeType = (NSString *)UTTypeCopyPreferredTagWithClass((CFStringRef)uti, kUTTagClassMIMEType)))
-						mimeType = NSMakeCollectable(mimeType);
+                    mimeType = (__bridge_transfer NSString *)UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)uti, kUTTagClassMIMEType);
 				}
 							
 			
@@ -80,7 +79,7 @@
 {
 	CFUUIDRef uuidRef     = CFUUIDCreate(kCFAllocatorDefault);
 	CFStringRef stringRef = CFUUIDCreateString(kCFAllocatorDefault, uuidRef);
-	NSString *uuid        = [NSString stringWithString:(NSString*)stringRef];
+	NSString *uuid        = [NSString stringWithString:(__bridge_transfer NSString *)stringRef];
 	
 	CFRelease(stringRef);
 	CFRelease(uuidRef);

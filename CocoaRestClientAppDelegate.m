@@ -78,7 +78,6 @@ static CRCContentType requestContentType;
 	//[row setObject:@"multipart/form-data" forKey:@"value"];
 	[row setObject:@"application/x-www-form-urlencoded" forKey:@"value"];
 	[headersTable addObject:row];
-	[row release];
 	
 	/*row = [[NSMutableDictionary alloc] init];
 	[row setObject:@"X-HTTP-Method-Override" forKey:@"key"];
@@ -272,14 +271,8 @@ static CRCContentType requestContentType;
 	//NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
 	//[responseText setString:[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]];
 	
-	if (lastRequest != nil) {
-		[lastRequest release];
-	}
 	lastRequest = [CRCRequest requestWithApplication:self];
 	
-	if (startDate != nil) {
-		[startDate release];
-	}
 	startDate = [NSDate date];
 	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:YES];
 	if (! connection) {
@@ -340,7 +333,7 @@ static CRCContentType requestContentType;
         if (! followRedirects) {
             return nil;
         } else {
-            NSMutableURLRequest *r = [[inRequest mutableCopy] autorelease]; // original request
+            NSMutableURLRequest *r = [inRequest mutableCopy]; // original request
             [r setURL: [inRequest URL]];
             return r;
         }
@@ -404,9 +397,6 @@ static CRCContentType requestContentType;
 			NSString *jsonFormattedString = [[NSString alloc] initWithString:[parser stringWithObject:jsonObj]]; 
 			[responseText setString:jsonFormattedString];
 			needToPrintPlain = NO;
-			[parser release];
-            [jsonStringFromData release];
-            [jsonObj release];
 		}
 	} 
 	
@@ -428,8 +418,6 @@ static CRCContentType requestContentType;
 	[paramsTableView reloadData];
 	[paramsTableView selectRow:([paramsTable count] - 1) byExtendingSelection:NO];
 	[paramsTableView editColumn:0 row:([paramsTable count] - 1) withEvent:nil select:YES];
-	
-	[row release];
 }
 
 - (IBAction) minusParamsRow:(id)sender {
@@ -486,7 +474,6 @@ static CRCContentType requestContentType;
 			[filesTableView reloadData];
 			[filesTableView selectRow:([filesTable count] - 1) byExtendingSelection:NO];
 			[filesTableView editColumn:0 row:([filesTable count] - 1) withEvent:nil select:YES];
-			[row release];
 		}
 
 	}
@@ -521,8 +508,7 @@ static CRCContentType requestContentType;
 		[row setObject:@"Content-Type" forKey:@"key"];
 		[row setObject:[sender title] forKey:@"value"];
 		[headersTable addObject:row];
-		[headersTableView reloadData];		
-		[row release];
+		[headersTableView reloadData];
 	}
 
 	[tabView selectTabViewItem:reqHeadersTab];
@@ -624,8 +610,6 @@ static CRCContentType requestContentType;
 	[headersTableView reloadData];
 	[headersTableView selectRow:([headersTable count] - 1) byExtendingSelection:NO];
 	[headersTableView editColumn:0 row:([headersTable count] - 1) withEvent:nil select:YES];
-	
-	[row release];
 }
 
 - (IBAction) minusHeaderRow:(id)sender {
