@@ -12,7 +12,7 @@
 #import "CRCFileRequest.h"
 #import "CRCRequest.h"
 #import <Foundation/Foundation.h>
-#import "JSON.h"
+#import "JSONKit.h"
 
 #define MAIN_WINDOW_MENU_TAG 150
 
@@ -264,9 +264,9 @@ static CRCContentType requestContentType;
 	[status setStringValue:@"Receiving Data..."];
 	NSMutableString *headers = [[NSMutableString alloc] init];
 	NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
-	[headers appendFormat:@"HTTP %d %@\n\n", [httpResponse statusCode], [[NSHTTPURLResponse localizedStringForStatusCode:[httpResponse statusCode]] capitalizedString]];
+	[headers appendFormat:@"HTTP %ld %@\n\n", (long)[httpResponse statusCode], [[NSHTTPURLResponse localizedStringForStatusCode:[httpResponse statusCode]] capitalizedString]];
 	
-	[headersTab setLabel:[NSString stringWithFormat:@"Response Headers (%d)", [httpResponse statusCode]]];
+	[headersTab setLabel:[NSString stringWithFormat:@"Response Headers (%ld)", (long)[httpResponse statusCode]]];
 	
 	NSDictionary *headerDict = [httpResponse allHeaderFields];
 	for (NSString *key in headerDict) {
@@ -355,11 +355,10 @@ static CRCContentType requestContentType;
 			needToPrintPlain = NO;
 		} else if ([contentType isEqualToString:@"application/json"]) {
 			NSLog(@"Formatting JSON");
-			SBJSON *parser = [[SBJSON alloc] init];
-			[parser setHumanReadable:YES];
             NSString *jsonStringFromData = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
-			id jsonObj = [parser objectWithString:jsonStringFromData];
-			NSString *jsonFormattedString = [[NSString alloc] initWithString:[parser stringWithObject:jsonObj]]; 
+            id jsonObj = [jsonStringFromData objectFromJSONString];
+            NSError *error = nil;
+			NSString *jsonFormattedString = [jsonObj JSONStringWithOptions:JKSerializeOptionPretty error:&error];
 			[responseText setString:jsonFormattedString];
 			needToPrintPlain = NO;
 		}
