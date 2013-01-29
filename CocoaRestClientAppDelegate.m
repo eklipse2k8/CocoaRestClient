@@ -35,7 +35,26 @@ static CRCContentType requestContentType;
 - (void)loadSavedCRCRequest:(CRCRequest *)request;
 @end
 
-@implementation CocoaRestClientAppDelegate
+@implementation CocoaRestClientAppDelegate {
+@private
+	NSMutableData *receivedData;
+	NSString *contentType;
+	
+	NSMutableArray *headersTable;
+	NSMutableArray *filesTable;
+	NSMutableArray *paramsTable;
+	
+    NSMutableArray *savedRequestsArray;
+	
+	NSInteger timeout;
+    
+    BOOL allowSelfSignedCerts;
+    BOOL followRedirects;
+	BOOL rawRequestInput;
+	NSDate *startDate;
+    
+    CRCRequest *lastRequest;
+}
 
 @synthesize window;
 @synthesize submitButton;
@@ -63,7 +82,9 @@ static CRCContentType requestContentType;
 
 - (id) init {
 	self = [super init];
-	
+	if (self == nil)
+        return nil;
+    
 	timeout = 20; 
 	allowSelfSignedCerts = YES;
     followRedirects = YES;
@@ -476,7 +497,7 @@ static CRCContentType requestContentType;
 #pragma mark Table view methods
 - (NSInteger) numberOfRowsInTableView:(NSTableView *) tableView {
 	NSLog(@"Calling number rows");
-	NSInteger count;
+	NSInteger count = 0;
 	
 	if(tableView == headersTableView)
 		count = [headersTable count];
@@ -495,7 +516,7 @@ static CRCContentType requestContentType;
 	
 	id object;
 	
-	NSLog(@"Calling objectValueForTableColumn %d %@", row, [tableColumn identifier]);
+	NSLog(@"Calling objectValueForTableColumn %ld %@", (long)row, [tableColumn identifier]);
 	
 	if(tableView == headersTableView)
 		object = [[headersTable objectAtIndex:row] objectForKey:[tableColumn identifier]];
@@ -772,7 +793,8 @@ static CRCContentType requestContentType;
 	folder = [folder stringByExpandingTildeInPath];
 	
 	if ([fileManager fileExistsAtPath: folder] == NO) {
-		[fileManager createDirectoryAtPath:folder attributes:nil];
+        NSError *error = nil;
+        [fileManager createDirectoryAtPath:folder withIntermediateDirectories:YES attributes:nil error:&error];
 	}
     
 	NSString *fileName = @"CocoaRestClient.savedRequests";

@@ -10,6 +10,7 @@
 
 
 @implementation CRCRequest
+
 @synthesize name, url, method, rawRequestInput, requestText, username, password, headers, files, params;
 
 + (CRCRequest *)requestWithApplication:(CocoaRestClientAppDelegate *)application

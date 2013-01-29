@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 
-@interface CRCRawRequest : NSObject {
+@interface CRCRawRequest : NSObject
 
-}
 +(void)createRequest:(NSMutableURLRequest *)request;
+
 @end

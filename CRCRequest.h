@@ -9,18 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CocoaRestClientAppDelegate.h"
 
-@interface CRCRequest : NSObject <NSCoding> {
-	BOOL rawRequestInput;
-	NSString * name;
-	NSString * url;
-	NSString * method;
-	NSString * requestText;
-	NSString * username;
-	NSString * password;
-	NSArray * headers;
-	NSArray * files;
-	NSArray * params;
-}
+@interface CRCRequest : NSObject <NSCoding>
 
 @property BOOL rawRequestInput;
 @property(nonatomic, copy) NSString * name;

@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 
-@interface CRCFormEncodedRequest : NSObject {
+@interface CRCFormEncodedRequest : NSObject
 
-}
 +(void)createRequest:(NSMutableURLRequest *)request;
+
 @end

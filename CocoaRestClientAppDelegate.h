@@ -10,60 +10,7 @@
 
 @class CRCRequest;
 
-@interface CocoaRestClientAppDelegate : NSObject {
-    @private 
-    __unsafe_unretained NSWindow *window;
-	
-	__unsafe_unretained NSComboBox *urlBox;
-	__unsafe_unretained NSButton *submitButton;
-	__unsafe_unretained NSTextView *requestText;
-	__unsafe_unretained NSTextView *responseText;
-	__unsafe_unretained NSTabViewItem *headersTab;
-	__unsafe_unretained NSTextView *responseTextHeaders;
-	__unsafe_unretained NSPopUpButton *methodButton;
-	__unsafe_unretained NSTableView *headersTableView;
-	__unsafe_unretained NSTableView *filesTableView;
-	__unsafe_unretained NSTableView *paramsTableView;
-	
-	__unsafe_unretained NSTextField *username;
-	__unsafe_unretained NSTextField *password;
-	
-	NSMutableData *receivedData;
-	NSString *contentType;
-	
-	NSMutableArray *headersTable;
-	NSMutableArray *filesTable;
-	NSMutableArray *paramsTable;
-	
-	__unsafe_unretained NSDrawer *savedRequestsDrawer;
-    NSMutableArray *savedRequestsArray;
-	__unsafe_unretained NSOutlineView *savedOutlineView;
-	
-	__unsafe_unretained NSPanel *saveRequestSheet;
-	__unsafe_unretained NSTextField *saveRequestTextField;
-	
-	__unsafe_unretained NSPanel *timeoutSheet;
-	__unsafe_unretained NSTextField *timeoutField;
-	
-	NSInteger timeout;
-    
-    BOOL allowSelfSignedCerts;
-    BOOL followRedirects;
-	
-	__unsafe_unretained NSButton *plusParam;
-	__unsafe_unretained NSButton *minusParam;
-	BOOL rawRequestInput;
-	__unsafe_unretained NSTabView *tabView;
-	__unsafe_unretained NSTabViewItem *reqHeadersTab;
-	NSDate *startDate;
-	__unsafe_unretained NSTextField *status;
-    
-
-    CRCRequest *lastRequest;
-	
-}
-
-
+@interface CocoaRestClientAppDelegate : NSObject 
 
 @property (nonatomic, readonly) NSMutableArray *headersTable;
 @property (nonatomic, readonly) NSMutableArray *filesTable;
@@ -90,7 +37,7 @@
 @property (assign) IBOutlet NSTextField *timeoutField;
 @property (assign) IBOutlet NSButton *plusParam;
 @property (assign) IBOutlet NSButton *minusParam;
-@property (assign) BOOL rawRequestInput;
+@property (nonatomic, assign) BOOL rawRequestInput;
 @property (assign) IBOutlet NSTabView *tabView;
 @property (assign) IBOutlet NSTabViewItem *reqHeadersTab;
 @property (assign) IBOutlet NSTextField *status;

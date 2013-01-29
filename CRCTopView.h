@@ -2,8 +2,6 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface CRCTopView : NSView {
-
-}
+@interface CRCTopView : NSView
 
 @end
